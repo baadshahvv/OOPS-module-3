@@ -1,0 +1,62 @@
+1. A function in C++ is a block of code designed to perform a specific task. It can take inputs, perform operations, and return a value.
+
+   * Function declaration (also called prototype) tells the compiler about the function’s name, return type, and parameters before its definition. Example:
+
+     
+     int add(int, int); // declaration
+
+   * Function definition provides the actual body of the function. Example:
+
+     
+     int add(int a, int b) {
+         return a + b;
+     }
+     
+   * Function calling executes the function by passing required arguments. Example:
+
+     
+     int result = add(5, 3);
+     cout << result; // Output: 8
+     
+
+2. Scope of variables defines where a variable is accessible in a program:
+
+   * Local variables are declared inside a function or block and can only be used there. Example:
+
+     
+     void func() {
+         int x = 10; // local variable
+         cout << x;
+     }
+     
+   * Global variables are declared outside all functions and can be accessed by any function in the program. Example:
+
+     
+     int x = 20; // global variable
+     void func() {
+         cout << x;
+     }
+     
+
+3. Recursion is when a function calls itself to solve a problem. It usually has a base condition to stop recursion. Example: calculating factorial:
+
+   
+   int factorial(int n) {
+       if(n == 0) return 1; // base case
+       else return n * factorial(n-1); // recursive call
+   }
+   cout << factorial(5); // Output: 120
+
+
+4. Function prototypes are declarations of functions that appear before the main function or before their usage in code. They tell the compiler what to expect. They are used to allow calling a function before its actual definition. Example:
+
+   
+   int multiply(int, int); // prototype
+   int main() {
+       cout << multiply(2, 3);
+       return 0;
+   }
+   int multiply(int a, int b) { // definition
+       return a * b;
+   }
+   

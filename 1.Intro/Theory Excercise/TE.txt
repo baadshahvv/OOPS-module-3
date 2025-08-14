@@ -1,0 +1,32 @@
+1. Procedural Programming focuses on functions or procedures to operate on data. Programs are divided into procedures or routines. Data is often global and can be accessed by any function, which may lead to errors. Object-Oriented Programming organizes code using objects and classes. Data and functions are bundled together in classes, and access can be controlled using access specifiers. OOP supports concepts like inheritance, polymorphism, and encapsulation, which improve reusability and maintainability.
+
+2. Main advantages of OOP over procedural programming:
+
+   * Encapsulation: Keeps data safe by controlling access through functions.
+   * Reusability: Code in classes can be reused through inheritance.
+   * Modularity: Programs are divided into objects, making them easier to manage and maintain.
+   * Flexibility: Polymorphism allows one interface to work with multiple data types or functions.
+   * Maintainability: Changes in one class do not affect other parts of the program as much.
+
+3. Steps to set up a C++ development environment:
+
+   * Install a C++ compiler like GCC, MinGW, or TDM-GCC.
+   * Set the compiler path in system environment variables so it can be accessed from the command line.
+   * Install an IDE such as Visual Studio, Code::Blocks, or VS Code for easier coding and debugging.
+   * Configure the IDE to use the installed compiler.
+   * Create a new project or file, write code, and compile/run it.
+
+4. Main input/output operations in C++ use `cin` and `cout`.
+
+   * For input: `cin >> variable;` Example:
+
+     
+     int age;
+     cin >> age;
+    
+   * For output: `cout << value;` Example:
+
+     
+     cout << "Your age is: " << age;
+    
+   * Other operations include reading/writing files using `ifstream` and `ofstream

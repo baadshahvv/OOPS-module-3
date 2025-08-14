@@ -1,0 +1,83 @@
+1. Key concepts of Object-Oriented Programming:
+
+   * Class: Blueprint for creating objects, defines properties (data) and behaviors (functions).
+   * Object: Instance of a class that holds actual data.
+   * Encapsulation: Bundling data and functions together and restricting access using access specifiers.
+   * Inheritance: Deriving a new class from an existing class to reuse code.
+   * Polymorphism: Ability to take many forms, e.g., functions or operators behaving differently based on context.
+   * Abstraction: Hiding unnecessary details and showing only relevant features.
+
+2. Classes and objects in C++:
+
+   * Class is a template, object is an instance of the class.
+     Example:
+
+   
+   class Car {
+   public:
+       string brand;
+       void honk() {
+           cout << "Beep! Beep!" << endl;
+       }
+   };
+
+   int main() {
+       Car myCar; // object
+       myCar.brand = "Toyota";
+       myCar.honk();
+       cout << myCar.brand;
+       return 0;
+   }
+   
+
+3. Inheritance in C++ allows a class to acquire properties and methods of another class.
+   Example:
+
+   
+   class Vehicle {
+   public:
+       void start() {
+           cout << "Vehicle started" << endl;
+       }
+   };
+
+   class Car : public Vehicle { // Car inherits from Vehicle
+   public:
+       void honk() {
+           cout << "Car honks" << endl;
+       }
+   };
+
+   int main() {
+       Car myCar;
+       myCar.start(); // inherited function
+       myCar.honk();
+       return 0;
+   }
+   
+
+4. Encapsulation is the concept of restricting access to some data and methods in a class to protect it from outside interference.
+
+   * Achieved using access specifiers: `private`, `protected`, and `public`.
+     Example:
+
+   
+   class BankAccount {
+   private:
+       double balance; // private data
+   public:
+       void deposit(double amount) {
+           balance += amount;
+       }
+       double getBalance() {
+           return balance;
+       }
+   };
+
+   int main() {
+       BankAccount account;
+       account.deposit(500);
+       cout << account.getBalance(); // access via public method
+       return 0;
+   }
+   

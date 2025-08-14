@@ -1,0 +1,64 @@
+1. Arrays in C++ are collections of elements of the same data type stored in contiguous memory locations.
+
+   * Single-dimensional arrays store elements in a linear sequence. Example:
+
+     
+     int numbers[5] = {1, 2, 3, 4, 5};
+     
+   * Multidimensional arrays store data in multiple dimensions, like a table. Example:
+
+     
+     int matrix[2][3] = {{1, 2, 3}, {4, 5, 6}};
+     
+
+2. String handling in C++ can be done using character arrays or the `string` class from the standard library.
+
+   * Using character arrays:
+
+     
+     char name[10] = "Om";
+     cout << name;
+     
+   * Using string class:
+
+     
+     #include <string>
+     string name = "Om";
+     cout << name;
+
+
+3. Arrays can be initialized during declaration or later in the code.
+
+   * 1D array initialization:
+
+     
+     int arr[5] = {1, 2, 3, 4, 5};
+     
+   * 2D array initialization:
+
+     
+     int matrix[2][3] = {{1, 2, 3}, {4, 5, 6}};
+     
+   * Partial initialization sets remaining elements to 0:
+
+     
+     int arr[5] = {1, 2}; // arr = {1, 2, 0, 0, 0}
+     
+
+4. Common string operations and functions in C++ using the `string` class:
+
+   * Concatenation: `s1 + s2`
+   * Length: `s.length()`
+   * Access character: `s[i]`
+   * Compare strings: `s1.compare(s2)`
+   * Find substring: `s.find("text")`
+   * Substring extraction: `s.substr(start, length)`
+   * Example:
+
+     
+     string s1 = "Hello";
+     string s2 = "World";
+     string s3 = s1 + " " + s2; // "Hello World"
+     cout << s3.length(); // 11
+     cout << s3.substr(0, 5); // "Hello"
+     
